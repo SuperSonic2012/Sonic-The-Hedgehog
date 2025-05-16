@@ -1,71 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 body {
-   background-image: url(background.jpg);
+    background-image: url(background1.jpg);
+    font-family: "Roboto", serif;
+}
+.game_card_list {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.game_card_list li {
+    width: 100%;
+    max-width: 350px;
+    list-style: none;
+    display: flex;
+    transition: 0.4s;
+}
+.game_card_list li:hover{
+    transform: scale(0.95);
+}
+.game_card_list li a{
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #dddddd;
+    text-align: center;
+}
+.game_card_list li a img{
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
-h1{
-   color: #1b1b1c;
-   text-align: center;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   font-weight: bold;
-   font-size: 40px;
+.content {
+    width: 100%;
+    background-color: #e4e4e4;
 }
 
-p{
-   color:#1b1b1c;
-   text-align: justify;
-   text-indent: 5%;
-   font-family: Arial, Helvetica, sans-serif;
-   font-size: 25px;
-   font-weight: normal;
-   margin-left: 100px;
-   margin-right: 100px;
+footer{
+    background-color: antiquewhite;
+    list-style: none;
+    text-align: center;
+    
 }
 
-.img {
-   display: flex;
-   margin-left: 50px;
-   margin-right: 100px;
-   justify-content: space-between; 
-}
-
-h2{
-   color: #1b1b1c;
-   text-align: center;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   font-weight: bold;
-   font-size: 60px;
-}
-
-.film_book{
-   display: flex;
-   list-style: none;
-   gap: 20px;
-}
-
-.film_book li{
-   width: 100%;
-   max-width: 350px;
-   list-style: none;
-   display: flex;
-   transition: 0.4s;
-}
-
-.film_book li:hover{
-   transform: scale(0.95);
-}
-
-.film_book li a{
-   width: 100%;
-   text-decoration: none;
-   display: flex;
-   flex-direction: column;
-   padding: 10px;
-   background-color: #dddddd;
-   text-align: center;
-}
-
-.film_book li a img{
-   display: block;
-   width: 100%;
-   height: auto;
-}
